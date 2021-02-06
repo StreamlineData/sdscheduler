@@ -3,7 +3,7 @@
 import os
 import socket
 
-from ndscheduler.corescheduler import utils
+from sdscheduler.corescheduler import utils
 
 
 class JobBase:

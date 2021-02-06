@@ -1,4 +1,4 @@
-"""Settings and configuration for ndscheduler.
+"""Settings and configuration for sdscheduler.
 
 This will create a settings module that overrides default
 settings (from the default_settings module) and it will override

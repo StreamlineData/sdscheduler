@@ -9,12 +9,12 @@ import uuid
 
 import pytz
 
-from ndscheduler.corescheduler import constants
+from sdscheduler.corescheduler import constants
 
 
 def import_from_path(path):
     """Import a module / class from a path string.
-    :param str path: class path, e.g., ndscheduler.corescheduler.job
+    :param str path: class path, e.g., sdscheduler.corescheduler.job
     :return: class object
     :rtype: class
     """

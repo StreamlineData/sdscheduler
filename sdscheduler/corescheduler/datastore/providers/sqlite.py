@@ -4,7 +4,7 @@ import datetime
 
 import pytz
 
-from ndscheduler.corescheduler.datastore import base
+from sdscheduler.corescheduler.datastore import base
 
 
 class DatastoreSqlite(base.DatastoreBase):

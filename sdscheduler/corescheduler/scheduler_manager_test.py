@@ -4,16 +4,16 @@ from builtins import str
 
 import tornado.testing
 
-from ndscheduler.corescheduler import scheduler_manager
-from ndscheduler.corescheduler import utils
+from sdscheduler.corescheduler import scheduler_manager
+from sdscheduler.corescheduler import utils
 
 
 class SchedulerManagerTest(tornado.testing.AsyncTestCase):
     def setUp(self, *args, **kwargs):
         super(SchedulerManagerTest, self).setUp(*args, **kwargs)
 
-        scheduler_class = 'ndscheduler.corescheduler.core.base.BaseScheduler'
-        datastore_class = 'ndscheduler.corescheduler.datastore.providers.sqlite.DatastoreSqlite'
+        scheduler_class = 'sdscheduler.corescheduler.core.base.BaseScheduler'
+        datastore_class = 'sdscheduler.corescheduler.datastore.providers.sqlite.DatastoreSqlite'
 
         self.scheduler = scheduler_manager.SchedulerManager(scheduler_class, datastore_class)
         self.scheduler.start()
@@ -95,7 +95,7 @@ class SchedulerManagerTest(tornado.testing.AsyncTestCase):
         self.assertEqual(job.name, name)
 
         arguments = [job_class_string, job_id,
-                     'ndscheduler.corescheduler.datastore.providers.sqlite.DatastoreSqlite',
+                     'sdscheduler.corescheduler.datastore.providers.sqlite.DatastoreSqlite',
                      None, None]
         arguments += args
         self.assertEqual(list(job.args), arguments)

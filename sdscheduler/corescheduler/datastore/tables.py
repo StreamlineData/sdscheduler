@@ -2,7 +2,7 @@
 
 import sqlalchemy
 
-from ndscheduler.corescheduler import utils
+from sdscheduler.corescheduler import utils
 
 
 #
