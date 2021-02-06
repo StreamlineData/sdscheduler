@@ -5,8 +5,8 @@ import unittest
 
 from apscheduler.schedulers.blocking import BlockingScheduler
 
-from ndscheduler.corescheduler import constants
-from ndscheduler.corescheduler.datastore.providers.sqlite import DatastoreSqlite
+from sdscheduler.corescheduler import constants
+from sdscheduler.corescheduler.datastore.providers.sqlite import DatastoreSqlite
 
 
 class DatastoreBaseTest(unittest.TestCase):

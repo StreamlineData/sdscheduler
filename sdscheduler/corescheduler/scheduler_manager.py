@@ -3,8 +3,8 @@
 
 from apscheduler.executors import pool
 
-from ndscheduler.corescheduler import constants
-from ndscheduler.corescheduler import utils
+from sdscheduler.corescheduler import constants
+from sdscheduler.corescheduler import utils
 
 
 class SchedulerManager:

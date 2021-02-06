@@ -4,9 +4,9 @@ import json
 
 from apscheduler.schedulers import tornado as apscheduler_tornado
 
-from ndscheduler.corescheduler import constants
-from ndscheduler.corescheduler import utils
-from ndscheduler.corescheduler.job import JobBase
+from sdscheduler.corescheduler import constants
+from sdscheduler.corescheduler import utils
+from sdscheduler.corescheduler.job import JobBase
 
 
 class BaseScheduler (apscheduler_tornado.TornadoScheduler):
